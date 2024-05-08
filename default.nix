@@ -15,7 +15,7 @@
   overlays = import ./overlays; # nixpkgs overlays
 
   example-package = pkgs.callPackage ./pkgs/example-package { };
-  wpsoffice-with-fonts = pkgs.callPackage ./pkgs/wpsoffice-with-fonts { };
+  wpsoffice-with-fonts = pkgs.libsForQt5.callPackage ./pkgs/wpsoffice-with-fonts { };
   # some-qt5-package = pkgs.libsForQt5.callPackage ./pkgs/some-qt5-package { };
   # ...
 }
